@@ -1,0 +1,150 @@
+/* Importing the font */
+@import url('https://fonts.googleapis.com/css2?family=Monotype+Corsiva&display=swap');
+
+/* General styles for the body */
+body {
+    background: linear-gradient(135deg, #8E7AB5 0%, #B784B7 33%, #E493B3 66%, #EEA5A6 100%);
+    font-family: 'Monotype Corsiva', cursive;
+    color: #2c3e50;
+    margin: 0;
+    padding: 0;
+    background-image: url('floral-pattern.png'); /* Add a floral background pattern */
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Styles for headings */
+h1, h2 {
+    font-family: 'Monotype Corsiva', cursive;
+    text-shadow: 2px 2px 4px #ffffff;
+    color: #a569bd;
+}
+
+/* Style for gallery images */
+#gallery img {
+    max-height: 400px; /* Ensuring consistent height */
+    max-width: 100%; /* Ensure images do not overflow the container */
+    object-fit: cover; /* Cover for consistent image display */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    display: block; /* Ensure block-level elements for centering */
+}
+
+/* Style for collage images */
+#collage img {
+    max-height: 400px; /* Ensuring consistent height */
+    max-width: 100%; /* Ensure images do not overflow the container */
+    object-fit: cover; /* Cover for consistent image display */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    display: block; /* Ensure block-level elements for centering */
+}
+
+/* Style for memes images */
+#memes .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Adds uniform spacing between memes */
+}
+
+#memes .col-md-4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 300px; /* Sets a consistent width for each meme container */
+}
+
+#memes video {
+    max-height: 300px;
+    width: 100%; /* Ensures the video fills the container width */
+    object-fit: cover;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+#memes p {
+    text-align: center;
+    font-size: 1em;
+    color: #34495e;
+    margin-top: 10px;
+    max-width: 100%; /* Ensures the caption fits within the container */
+}
+
+
+/* Style for videos */
+video {
+    max-height: 100%; /* Ensuring consistent height */
+    max-width: 100%; /* Ensure videos do not overflow the container */
+    object-fit: cover; /* Cover for consistent video display */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    display: block; /* Ensure block-level elements for centering */
+}
+
+
+/* Hover effect for images */
+.glow:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.3);
+    filter: brightness(1.1);
+}
+
+/* Style for carousel indicators */
+.carousel-indicators li {
+    background-color: #d5dbdb;
+}
+
+/* Footer styles */
+footer {
+    background: linear-gradient(135deg, #674188 0%, #C8A1E0 100%);
+    color: #f3e5f5;
+    padding: 20px 0;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* General text styles */
+p {
+    font-size: 1.2em;
+    color: #34495e;
+}
+
+/* Container styles for layout adjustment */
+.container {
+    max-width: 80%; /* Adjust container width for better spacing */
+    margin: 0 auto;
+}
+
+/* Extra styling for the header and sections */
+header {
+    background-color: rgba(248, 249, 250, 0.8); /* Semi-transparent background for the header */
+    padding: 30px 0;
+    border-bottom: 1px solid #d5dbdb; /* Adding a subtle bottom border */
+}
+
+/* Section styling */
+section {
+    background-color: rgba(242, 242, 242, 0.9); /* Semi-transparent background for sections */
+    padding: 20px 0;
+    margin-bottom: 30px; /* Add space between sections */
+    border-radius: 10px; /* Rounded corners for sections */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for a 3D effect */
+}
+
+/* Specific styling for instruments section */
+#instruments img {
+    margin: 20px auto;
+    display: block; /* Center images in this section */
+    max-width: 300px; /* Ensure images are not too large */
+}
